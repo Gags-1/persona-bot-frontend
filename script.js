@@ -12,7 +12,7 @@ chatForm.addEventListener("submit", async (e) => {
   userInput.disabled = true;
 
   try {
-    const res = await fetch("http://localhost:8000/chat-bot", {
+    const res = await fetch("https://persona-bot-backend.onrender.com/chat-bot", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message }),
